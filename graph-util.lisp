@@ -92,8 +92,6 @@
             )
   )
 
-(graph->png "wizard.dot" *wizard-nodes* *wizard-edges*)
-
 (defun uedges->dot (edges)
   (maplist (lambda (lst)
              (mapc (lambda (edge)
@@ -128,4 +126,3 @@
             )
   )
 
-(ugraph->png "uwizard.dot" *wizard-nodes* *wizard-edges*)
